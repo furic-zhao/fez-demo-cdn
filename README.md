@@ -3,7 +3,7 @@
 为项目静态资源添加CDN地址示例。
 
 ## 使用示例
-#### 首先将fez-demo-cdn
+#### 首先将fez-demo-cdn 项目下载到FEZ工程目录
 
 ```bash
 git clone git@github.com:furic-zhao/fez-demo-cdn.git

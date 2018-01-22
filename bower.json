@@ -1,6 +1,6 @@
 {
-    "name": "fez-demo-zhj",
-    "description": "使用Bower管理fez-demo-zhj第三方框架库",
+    "name": "fez-demo-cdn",
+    "description": "使用Bower管理fez-demo-cdn第三方框架库",
     "main": "",
     "license": "MIT",
     "homepage": "",

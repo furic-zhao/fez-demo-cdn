@@ -1,5 +1,6 @@
 # fez-demo-cdn
-fez-demo-cdn 是为项目静态资源添加CDN地址的示例。
+
+为项目静态资源添加CDN地址示例。
 
 ## 使用示例
 #### 首先将fez-demo-cdn
@@ -62,4 +63,22 @@ gulp dist
 
 ```bash
 gulp test
+```
+
+#### 分类静态资源配置地址
+
+```
+//fez.config.js 文件
+
+export default {
+  useCdn: {
+    available: false,
+    extFile: 'css,html', //可以替换CDN地址的文件扩展名
+    base: "//fezcdn.com/cdndemo/" //默认CDN地址
+    js: "http://js.fezcdn.com/cdndemo/", //脚本CDN地址
+    css: "http://css.fezcdn.com/cdndemo/", //样式CDN地址
+    images: "http://img.fezcdn.com/cdndemo/", //图片CDN地址
+    fonts: "http://fonts.fezcdn.com/cdndemo/" //字体CDN地址
+  }
+}
 ```

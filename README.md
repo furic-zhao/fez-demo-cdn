@@ -24,7 +24,7 @@ export default {
 }
 ```
 
-- 执行 `gulp dist` 做项目上线发版
+- 执行 `gulp dist` 上线发版
 - 项目中所有的静态资源链接Url都会被添加上CDN地址前缀，比如：
 
 ```
@@ -61,7 +61,7 @@ export default {
 
 ```
 
-> FEZ默认使用相对路径引用静态资源，即：`<script src="static/js/demo.js">`
+> FEZ自动默认使用相对路径引用静态资源，即：`<script src="static/js/demo.js">`
 
 ```
 //index.dc24eb5359.css
@@ -81,7 +81,7 @@ body {
 }
 ```
 
-> 在样式中请尽量使用相对路径来引入图片和字体文件，即:`background-image:url('../images/bg.jpg')`，FEZ会自动做路径转换。
+> 样式中请尽量使用相对路径来引入图片和字体文件，即:`background-image:url('../images/bg.jpg')`，FEZ会自动做路径转换。
 
 #### 验证效果
 
@@ -97,7 +97,7 @@ gulp dist
 gulp test
 ```
 
-#### 分类静态资源配置地址
+#### 分类配置地址(高级配置)
 
 ```
 //fez.config.js 文件
@@ -114,3 +114,5 @@ export default {
   }
 }
 ```
+
+> 如果js、css、images、fonts未配置，FEZ默认调用base中的配置。在`extFile`中可配置要处理的文件扩展名，FEZ默认只对`css`和`html`中引用的Url地址添加CDN前缀。

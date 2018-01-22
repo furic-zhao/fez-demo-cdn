@@ -33,6 +33,8 @@ export default {
 <!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="renderer" content="webkit"><meta name="apple-mobile-web-app-capable" content="no"><meta name="format-detection" content="telephone=no"><title>添加CDN地址Demo</title><meta name="keywords" content=""><meta name="description" content=""><link rel="stylesheet" href="//static.fezcdn.com/cdndemo/static/css/index-dc24eb5359.css"></head><body><div class="content"><h3>《香港之行》</h3><p>雨后登高望山楼<br>溢彩香江曜中秋<br>悠游凌霄美食汇<br>不负此行挂心头</p></div><script src="//static.fezcdn.com/cdndemo/static/js/index-f3d06ba2f6.js"></script></body></html>
 ```
 
+> FEZ默认使用相对路径引用静态资源，即：`<script src="static/js/demo.js">`
+
 ```
 //index.dc24eb5359.css
 
@@ -50,6 +52,8 @@ body {
   background-size: 100%
 }
 ```
+
+> 在样式中请尽量使用相对路径来引入图片和字体文件，即:`background-image:url('../images/bg.jpg')`，FEZ会自动做路径转换。
 
 #### 验证效果
 
